@@ -7,7 +7,7 @@ RUN apt-get update -y
 RUN apt-get install -y build-essential
 RUN apt-get install -y libssl-dev
 RUN apt-get install -y wget
-RUN wget http://www.live555.com/liveMedia/public/live555-latest.tar.gz
+RUN wget https://github.com/krisbock/live555rtsp/raw/main/live555-latest.tar.gz
 RUN tar -xzf live555-latest.tar.gz
 
 WORKDIR /live
